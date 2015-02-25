@@ -13,7 +13,7 @@
 
 	/* $url = "http://steamcommunity.com/groups/"; */
 	$url = $groupadressiframe."/memberslistxml/?xml=1";
-	$width = $groupwidthiframe-((6/100)*$groupwidthiframe)-12;
+	$width = $groupwidthiframe-((6/100)*$groupwidthiframe);
 	$padding = (3/100)*$groupwidthiframe;
 	$imagewidth =((18/100)*$width);
 
@@ -37,7 +37,7 @@
 	 
 
 	<!-- Affichage widget -->
-	<div id ="widget" style="width:auto;padding:<? echo $padding."px"; ?>;">
+	<div id ="widget" style="width:<? echo $width."px"; ?>;padding:<? echo $padding."px"; ?>;">
 				
 				<!-- Groupe -->
 
