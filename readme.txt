@@ -118,14 +118,10 @@ des idées amelioration.
 
 
 
-1. You will got the following menu when you activate the plugin. /trunk/images/screenshots/screenshot-1.png . "/trunk/images/screenshots/screenshot-1.png"
-
-2. When you go to settings you can choose the group you want to display and his width. /images/screenshots/screenshot-2.png . "/trunk/images/screenshots/screenshot-2.png"
-
-
-3. Final result "/trunk/images/screenshots/screenshot-3.png"
-
-
+1. You will got the following menu when you activate the plugin.
+2. When you go to settings you can choose the group you want to display and his width.
+3. Appearance settings.
+4. Final result.
 
 **(French)**
 
@@ -134,9 +130,8 @@ des idées amelioration.
 1. Vous obtenez le menu suivant après activation du plugin. /images/screenshots/screenshot-1.png . "/trunk/images/screenshots/screenshot-1.png"
 
 2. Dans le menu "Settings" entrez l'adresse du groupe que vous souhaitez afficher ainsi que sa largeur. /trunk/images/screenshots/screenshot-2.png . "/trunk/images/screenshots/screenshot-2.png"
-3. Résultat final "/trunk/images/screenshots/screenshot-3.png"
-
-
+3. Configuration d'apparence.
+4. Résultat final.
 
 
 
