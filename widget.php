@@ -1,10 +1,7 @@
-
-		
-	<?php echo "<LINK href='".plugin_dir_url( __FILE__ )."style.css' rel='stylesheet' type='text/css'/>"; ?>
+<?php echo "<LINK href='".plugin_dir_url( __FILE__ )."style.css' rel='stylesheet' type='text/css'/>"; ?>
 
 
 	<!-- chargement page groupe en XML -->
-
 
 	<?
 
