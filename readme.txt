@@ -122,6 +122,7 @@ des idées amelioration.
 
 
 
+= 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
 * First version of the widget
@@ -133,7 +134,7 @@ des idées amelioration.
 
 
 
-
+= 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
 * --
