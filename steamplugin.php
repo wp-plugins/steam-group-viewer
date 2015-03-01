@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: SteamGroup-Widget
+Plugin Name: Steam Group Widget
 Plugin URI: http://www.florian-chapon.fr/pages/realisations/steam
-Description: Permet l'affichage des informations importantes d'un groupe steam de votre choix 
+Description: (en) Allow you to display some informations about your steam group on your webpage | (fr) Permet l'affichage des informations importantes d'un groupe steam de votre choix 
 (nombre d'inscrits, joueurs en ligne, en jeu, miniatures de membres du groupe...).
-Version: 1.0
+Version: 1.1
 Author: Florian Chapon
 Author URI: http://www.florian-chapon.fr
 License: --
@@ -15,7 +15,7 @@ class steamplugin
 	/* Création du plugin associé au widget */ 
 	public function __construct()
 	{
-	include_once plugin_dir_path( __FILE__ ).'/steamgroup.php';
+	include_once plugin_dir_path( __FILE__ ).'/scripts/steamgroup.php';
 	new steamgroup();
 
 	/* Appel BDD + installation */
@@ -45,6 +45,7 @@ class steamplugin
 	echo '<h1>'.get_admin_page_title().'</h1>';
 	
 	?>
+	
 		(English)
 		<div style="margin:30px 20px 30px 0px; text-align:justify;">
 		Here you can have a little preview of the widget with the Official CSGO Steam Group.The group adress is this one: 
@@ -125,7 +126,7 @@ class steamplugin
 			</div>
 		</div>
 		
-		
+	
 		
 		
 		

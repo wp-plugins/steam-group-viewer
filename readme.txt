@@ -11,7 +11,7 @@ Requires at least: 3.0.1
 
 Tested up to: 4.1.1
 
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 This plugin allows you to show your steam group profile on your website!
 
@@ -110,24 +110,10 @@ des idées amelioration.
 
 
 
-**(English)**
-
-
-
-1. You will got the following menu when you activate the plugin.
-2. When you go to settings you can choose the group you want to display and his width.
-3. Appearance settings.
-4. Final result.
-
-**(French)**
-
-
-
-1. Vous obtenez le menu suivant après activation du plugin. /images/screenshots/screenshot-1.png . "/trunk/images/screenshots/screenshot-1.png"
-
-2. Dans le menu "Settings" entrez l'adresse du groupe que vous souhaitez afficher ainsi que sa largeur. /trunk/images/screenshots/screenshot-2.png . "/trunk/images/screenshots/screenshot-2.png"
-3. Configuration d'apparence.
-4. Résultat final.
+1. (en) You will got the following menu when you activate the plugin.| (fr) Vous obtenez le menu suivant après activation du plugin.
+2. (en) When you go to settings you can choose the group you want to display and his width.| (fr) Dans le menu "Settings" entrez l'adresse du groupe que vous souhaitez afficher ainsi que sa largeur
+3. (en) Appearance settings | (fr) Configuration d'apparence.
+4. (en) Final result.| (fr) Résultat final
 
 
 
@@ -136,6 +122,7 @@ des idées amelioration.
 
 
 
+= 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
 * First version of the widget
 
@@ -144,6 +131,10 @@ des idées amelioration.
 
 == Upgrade Notice ==
 
+
+
+
+= 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
 * --
 
