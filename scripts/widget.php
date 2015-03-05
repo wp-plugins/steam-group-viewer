@@ -1,5 +1,9 @@
 <?php 
 
+	$groupadressiframe = $_GET['group'];
+	$groupwidthiframe = $_GET['width'];
+
+		
 	/* $url = "http://steamcommunity.com/groups/"; */
 	$url = $groupadressiframe."/memberslistxml/?xml=1";
 	$width = $groupwidthiframe-((6/100)*$groupwidthiframe);
@@ -26,13 +30,13 @@
 	 
 
 	<!-- Affichage widget -->
-	<div id ="widget" style="width:<? echo $width."px"; ?>;padding:<? echo $padding."px"; ?>;">
+	<div id ="widget" style="width:auto; padding:<? echo $padding."px"; ?>; border-radius: 5px;">
 				
 				<!-- Groupe -->
 
-				<div style="height:auto;width:100%;display:inline-block;">
-					<div style="float:left;width:18%;"><img src="<? echo $avatar;?>" width="<? echo $imagewidth; ?>" style="border-radius:100%;"/></div>
-					<div style="float:left;width:77%;padding-left:5%;height:<? echo $imagewidth; ?>;display:flex; align-items:center;font-size:1.2em;"><font color="#3b5998"><b><span><? echo $groupname;?></span></b></font></div>
+				<div style="height:auto;width:100%;">
+					<div style="display: inline-block; vertical-align: middle; width:18%;"><img src="<? echo $avatar;?>" width="<? echo $imagewidth; ?>" style="border-radius:100%;"/></div>
+					<div style="display: inline-block; vertical-align: middle;width:77%;height:<? echo $imagewidth; ?>;font-size:1.2em;"><font color="#3b5998"><b><span><? echo $groupname;?></span></b></font></div>
 				</div>
 				
 				<div id="separator"></div>
@@ -64,7 +68,7 @@
 				<!-- Boutton rejoindre -->
 				<table width="100%">
 					<tr>
-						<td valign="middle" width="65%" style="border:0;"><u>Join US !</u>
+						<td valign="middle" width="65%" style="border:0;color:#000000;"><u>Join US !</u>
 						</td>
 						<td align="right" valign="middle" width="35%" style="padding:0;border:0;">
 							<div style="width:100%; height: 22px;border:none; border-radius:2px; background: #a4d007; background: -moz-linear-gradient(top, #a4d007 5%, #6b8805 95%);
@@ -133,12 +137,14 @@
 				
 				?></div>
 
+				
+<!-- Not use right now -->
 	<script type="text/javascript">
 
-	$("body").each(function(i, obj) {
-		newSize = ((<?php echo $groupwidthiframe; ?>)/300)*14;
-		$(obj).css("font-size", newSize + "px");
-	});
+		$("body").each(function(i, obj) {
+			newSize = ((<?php echo $groupwidthiframe; ?>)/300)*14;
+			$(obj).css("font-size", newSize + "px");
+		});
 
 	</script>
 		

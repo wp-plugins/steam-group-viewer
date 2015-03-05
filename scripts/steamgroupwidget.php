@@ -27,15 +27,51 @@ class Steam_Group_Widget extends WP_Widget
 			
 		}
 		
+		
+			
+		
 		/* Enregistrement fichier style */
 		
 		wp_register_style( 'widgetstyle', plugins_url('style.css', __FILE__) );
 		wp_enqueue_style( 'widgetstyle' );
-		/* fin enregistrement + insertion */
 		
+		/* fin enregistrement + insertion */	
+		
+				
+		
+		
+		
+		$widgeturl = plugins_url('widget.php', __FILE__);	
+		?>
+		
+		
+		
+		<div id="steamgroupviewer"></div>
+
+<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+			
+	
+		<script type="text/javascript" defer>
+
+			jQuery(function($){
+				$('#steamgroupviewer').html('<div style="display:inline-block; vertical-align:middle;text-align:center;width:100%;"><img src="<?php echo plugins_url('loader.gif',__FILE__);?>" width="50" height="50" align="center" /></div>');
+				$("#steamgroupviewer" ).load("<?php echo plugins_url('widget.php', __FILE__)."?group=".$groupadressiframe."&width=".$groupwidthiframe; ?>");
+			});
+
+		</script>
+
+		
+
+		
+		
+		<?
+		
+		/*
+				 
 		include_once plugin_dir_path( __FILE__ ).'widget.php';
 		
-	
+	*/
 		
 		echo $args['after_widget'];	
 		

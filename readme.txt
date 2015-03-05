@@ -11,7 +11,7 @@ Requires at least: 3.0.1
 
 Tested up to: 4.1.1
 
-Stable tag: 1.2
+Stable tag: 2.0
 License: GPLv2 or later
 This plugin allows you to show your steam group profile on your website!
 
@@ -122,6 +122,7 @@ des idées amelioration.
 
 
 
+= 2.0 =* Improve the enficiency of the loading time by using Async Jquery Script. Fix display error on title.
 = 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
@@ -134,6 +135,7 @@ des idées amelioration.
 
 
 
+= 2.0 =* Improve the enficiency of the loading time by using Async Jquery Script. Fix display error on title.
 = 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
 = 1.0 =
