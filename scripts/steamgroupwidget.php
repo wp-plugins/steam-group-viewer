@@ -26,8 +26,8 @@ class Steam_Group_Widget extends WP_Widget
 		$groupadressiframebrut = $_test->groupadress;
 		$groupwidthiframe = $_test->groupwidth;
 		
-		$patterns = array(":", "/");
-		$replace = array("%3A", "%2F");
+		$patterns = array(":", "/", "-");
+		$replace = array("%3A", "%2F", "%2D");
 		$groupadressiframe = str_replace($patterns, $replace, $groupadressiframebrut);
 			
 		}
