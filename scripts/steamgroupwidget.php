@@ -22,8 +22,11 @@ class Steam_Group_Widget extends WP_Widget
 		$test = $wpdb->get_results("SELECT id, groupadress, groupwidth FROM {$wpdb->prefix}steam_group_widget ORDER BY id DESC LIMIT 1");
 
 		foreach ($test as $_test) {
-		$groupadressiframe = $_test->groupadress;
+		
+		$groupadressiframebrut = $_test->groupadress;
 		$groupwidthiframe = $_test->groupwidth;
+		
+		$groupadressiframe = urlencode($groupadressiframebrut);
 			
 		}
 		
@@ -46,7 +49,9 @@ class Steam_Group_Widget extends WP_Widget
 		
 		
 		
-		<div id="steamgroupviewer"></div>
+		<div id="steamgroupviewer"><div id="loadingimg" style="display:inline-block; vertical-align:middle;text-align:center;width:100%;">
+		<img src="<?php echo plugins_url('loader.gif',__FILE__);?>" width="50" height="50" align="center" />
+		</div></div>
 
 <!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -55,8 +60,10 @@ class Steam_Group_Widget extends WP_Widget
 		<script type="text/javascript" defer>
 
 			jQuery(function($){
-				$('#steamgroupviewer').html('<div style="display:inline-block; vertical-align:middle;text-align:center;width:100%;"><img src="<?php echo plugins_url('loader.gif',__FILE__);?>" width="50" height="50" align="center" /></div>');
-				$("#steamgroupviewer" ).load("<?php echo plugins_url('widget.php', __FILE__)."?group=".$groupadressiframe."&width=".$groupwidthiframe; ?>");
+				$('#loadingimg').show();
+				$("#steamgroupviewer" ).load("<?php echo plugins_url('widget.php', __FILE__)."?group=".$groupadressiframe."&width=".$groupwidthiframe; ?>", function(){
+				$('#loadingimg').hide();
+			});
 			});
 
 		</script>

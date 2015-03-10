@@ -11,7 +11,7 @@ Requires at least: 3.0.1
 
 Tested up to: 4.1.1
 
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 This plugin allows you to show your steam group profile on your website!
 
