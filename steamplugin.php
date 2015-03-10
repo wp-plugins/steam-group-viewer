@@ -1,14 +1,11 @@
-<?php
-/*
-Plugin Name: Steam Group Widget
+<?php /* Plugin Name: Steam Group Widget
 Plugin URI: http://www.florian-chapon.fr/pages/realisations/steam
 Description: (en) Allow you to display some informations about your steam group on your webpage | (fr) Permet l'affichage des informations importantes d'un groupe steam de votre choix 
 (nombre d'inscrits, joueurs en ligne, en jeu, miniatures de membres du groupe...).
 Version: 2.0.1
 Author: Florian Chapon
 Author URI: http://www.florian-chapon.fr
-License: --
-*/
+License: GPLv2 or later */
 
 
 class steamplugin
