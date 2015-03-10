@@ -26,7 +26,8 @@ class Steam_Group_Widget extends WP_Widget
 		$groupadressiframebrut = $_test->groupadress;
 		$groupwidthiframe = $_test->groupwidth;
 		
-		$groupadressiframe = urlencode($groupadressiframebrut);
+		$groupadressiframeencode = urlencode($groupadressiframebrut);
+		$groupadressiframe = str_replace('-', '%2D', $groupadressiframeencode);
 			
 		}
 		
