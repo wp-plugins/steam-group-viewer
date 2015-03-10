@@ -121,7 +121,7 @@ des idées amelioration.
 == Changelog ==
 
 
-
+= 2.0.1 =* Minor improve
 = 2.0 =* Improve the enficiency of the loading time by using Async Jquery Script. Fix display error on title.
 = 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
@@ -134,7 +134,7 @@ des idées amelioration.
 == Upgrade Notice ==
 
 
-
+= 2.0.1 =* Minor improve
 = 2.0 =* Improve the enficiency of the loading time by using Async Jquery Script. Fix display error on title.
 = 1.2 =* Remove french sentence to translate them into english. Fix an activation bug
 = 1.1 =* Remove an header tag in the plugin to fix bugs
