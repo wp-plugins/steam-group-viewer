@@ -22,8 +22,13 @@ class Steam_Group_Widget extends WP_Widget
 		$test = $wpdb->get_results("SELECT id, groupadress, groupwidth FROM {$wpdb->prefix}steam_group_widget ORDER BY id DESC LIMIT 1");
 
 		foreach ($test as $_test) {
-		$groupadressiframe = $_test->groupadress;
+		
+		$groupadressiframebrut = $_test->groupadress;
 		$groupwidthiframe = $_test->groupwidth;
+		
+		$patterns = array(":", "/");
+		$replace = array("%3A", "%2F");
+		$groupadressiframe = str_replace($patterns, $replace, $groupadressiframebrut);
 			
 		}
 		
